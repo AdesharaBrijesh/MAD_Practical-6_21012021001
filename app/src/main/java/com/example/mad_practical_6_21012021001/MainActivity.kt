@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
             playPause()
         }
 
-        val buttonStop: Button = findViewById(R.id.stopbtn)
+        val buttonStop: Button = findViewById(R.id.stop_btn)
         buttonStop.setOnClickListener {
             stop()
         }
