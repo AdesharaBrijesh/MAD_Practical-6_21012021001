@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,12 +12,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val buttonPlay: Button = findViewById(R.id.playbtn)
+        val buttonPlay: FloatingActionButton = findViewById(R.id.playbtn)
         buttonPlay.setOnClickListener {
             playPause()
         }
 
-        val buttonStop: Button = findViewById(R.id.stop_btn)
+        val buttonStop: FloatingActionButton = findViewById(R.id.stop_btn)
         buttonStop.setOnClickListener {
             stop()
         }
